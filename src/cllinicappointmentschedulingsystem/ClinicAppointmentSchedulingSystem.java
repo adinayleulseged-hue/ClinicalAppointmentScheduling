@@ -12,14 +12,15 @@ public class ClinicAppointmentSchedulingSystem extends Application {
     public void start(Stage stage) throws Exception {
 
         Parent root = FXMLLoader.load(
-                getClass().getResource("FXMLDocument.fxml")
+                getClass().getResource("SimpleLogin.fxml")
         );
 
         Scene scene = new Scene(root);
 
-        stage.setTitle("Clinic Appointment Scheduling System");
-        stage.setResizable(false);
+        stage.setTitle("Clinic Login System");
         stage.setScene(scene);
+        stage.setResizable(false);
+        stage.centerOnScreen();
         stage.show();
     }
 

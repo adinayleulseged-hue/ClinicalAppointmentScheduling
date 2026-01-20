@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="cllinicappointmentschedulingsystem.ClinicAppointmentController"
+      spacing="15" alignment="CENTER" prefWidth="600" prefHeight="500"
+      style="-fx-background-color: #f5f5f5; -fx-padding: 20;">
+
+    <Label text="🏥 APPOINTMENT SCHEDULING" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <Label text="Patient:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtPatient" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="200"/>
+        
+        <Label text="Doctor:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="cmbDoctor" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="200"/>
+        
+        <Label text="Date:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <DatePicker fx:id="datePicker" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="200"/>
+        
+        <Label text="Time:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtTime" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="200" promptText="HH:MM"/>
+    </GridPane>
+    
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="SCHEDULE" onAction="#handleScheduleAppointment" prefWidth="100"/>
+        <Button text="CLEAR" onAction="#handleClear" prefWidth="100"/>
+    </HBox>
+    
+    <TextArea fx:id="txtOutput" prefWidth="550" prefHeight="200" editable="false"/>
+</VBox>

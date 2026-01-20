@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="clinicappointmentschedulingsystem.LoginController"
+            prefWidth="400" prefHeight="300"
+            style="-fx-background-color: #f0f0f0;">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="50" layoutY="50" prefWidth="300" prefHeight="200">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <Label text="Clinic Login System"
+               style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+
+        <VBox spacing="15" alignment="CENTER">
+            <VBox spacing="5">
+                <Label text="Username:" style="-fx-font-weight: bold;"/>
+                <TextField fx:id="txtUsername" promptText="Enter username" prefWidth="250"/>
+            </VBox>
+
+            <VBox spacing="5">
+                <Label text="Password:" style="-fx-font-weight: bold;"/>
+                <PasswordField fx:id="txtPassword" promptText="Enter password" prefWidth="250"/>
+            </VBox>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Login" onAction="#handleLogin" 
+                        style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold;"
+                        prefWidth="100"/>
+                <Button text="Clear" onAction="#handleClear"
+                        style="-fx-background-color: #95a5a6; -fx-text-fill: white;"
+                        prefWidth="100"/>
+            </HBox>
+
+            <Label fx:id="lblMessage" style="-fx-text-fill: red;" wrapText="true"/>
+        </VBox>
+    </VBox>
+</AnchorPane>

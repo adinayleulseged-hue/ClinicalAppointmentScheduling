@@ -20,6 +20,7 @@ public class ClinicAppointmentSchedulingSystem extends Application {
         stage.setTitle("Clinic Appointment Scheduling System");
         stage.setScene(scene);
         stage.setResizable(false);
+        stage.centerOnScreen();
         stage.show();
     }
 

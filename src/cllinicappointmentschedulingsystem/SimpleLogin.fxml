@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="cllinicappointmentschedulingsystem.LoginController" 
+      spacing="20" alignment="CENTER" prefWidth="400" prefHeight="300" 
+      style="-fx-background-color: #f0f8ff; -fx-padding: 30;">
+
+    <Label text="🏥 CLINIC LOGIN" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+    
+    <VBox spacing="10" alignment="CENTER">
+        <Label text="Username:"/>
+        <TextField fx:id="txtUsername" promptText="admin or staff" prefWidth="200"/>
+        
+        <Label text="Password:"/>
+        <PasswordField fx:id="txtPassword" promptText="Enter password" prefWidth="200"/>
+        
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="LOGIN" onAction="#handleLogin" prefWidth="80"/>
+            <Button text="CLEAR" onAction="#handleClear" prefWidth="80"/>
+        </HBox>
+        
+        <Label fx:id="lblMessage" style="-fx-text-fill: red;"/>
+        
+        <VBox spacing="5" alignment="CENTER">
+            <Label text="Credentials:" style="-fx-font-weight: bold;"/>
+            <Label text="admin / clinic123"/>
+            <Label text="staff / staff123"/>
+        </VBox>
+    </VBox>
+</VBox>

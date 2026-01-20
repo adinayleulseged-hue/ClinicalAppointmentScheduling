@@ -1,0 +1,5 @@
+Dr. Smith - General Medicine
+Dr. Johnson - Cardiology
+Dr. Williams - Pediatrics
+Dr. Brown - Orthopedics
+Dr. Davis - Dermatology
